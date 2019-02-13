@@ -1,10 +1,11 @@
 
 
-| Редкость        | Состояние           | Cool  | Картинка|
-| ------------- |:-------------:| -----:||
-|    **Тайное**  | Поношенное | $1600 ||
-| ****Засекреченное**      | Прямо с завода      |   $12 ||
-| Редкое | Закаленное в боях     |    $1 ||
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 Markdown | Less | Pretty
 --- | --- | ---
