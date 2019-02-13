@@ -15,4 +15,4 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-[![url](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=0bElgWvTL0kE)
+[![youtube](https://cdn.igromania.ru/mnt/news/1/1/8/c/6/4/76440/2319247c3a83e329_848xH.jpg)](http://www.youtube.com/watch?v=0bElgWvTL0kE)
