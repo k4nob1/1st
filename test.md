@@ -1,8 +1,7 @@
 
-
-| Tables        | Are           | Cool  |
+| Редкость        | Состояние           | Цена  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
+| **Тайное**      | Поношенное | ![alt text](https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0n_L1JaKfzzoGuJJ02e2W8d6m2gztrkRoZmigItDGcgA_N1iFqwC-xr_m1J-57YOJlyVerprbwA/512fx384f "Logo Title Text 1") |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
