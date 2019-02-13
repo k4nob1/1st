@@ -6,10 +6,6 @@
 
 
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=0bElgWvTL0kE
