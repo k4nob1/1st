@@ -1,0 +1,9 @@
+boost_1_69_0
+Projkt/Debug/
+Projkt/test/
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.filters
+

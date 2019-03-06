@@ -231,10 +231,36 @@ string kilo(int n)
 string sch(int n, string s1,string s2,string s3)
 {
 	string ans;
+	if (n/100==11||n/100==12||n/100==13||n/100==14) ans = kilo(n)+" "+s3;
+	else
 	if (n%10==1) ans = kilo(n)+" "+s1;
 	else
 	if (n%10>1&&n%10<5) ans = kilo(n)+" "+s2;
 	else
 	ans = kilo(n)+" "+s3;
+	return ans;
+}
+
+string last(int r, string r1,string r2,string r3,int k, string k1,string k2,string k3)
+{
+	string ans;
+	int a=r%100;
+	int b=k%100;
+	if (a==11||a==12||a==13||a==14) ans = kilo(r)+" "+r3;
+	else
+	if (r%10==1) ans = kilo(r)+" "+r1;
+	else
+	if (r%10>1&&r%10<5) ans = kilo(r)+" "+r2;
+	else
+	ans = kilo(r)+" "+r3;
+	if (k==0) ans=ans;
+	else
+	if (b==11||b==12||b==13||b==14) ans = ans+", "+kilo(k)+" "+k3;
+	else
+	if (k%10==1) ans = ans+", "+kilo(k)+" "+k1;
+	else
+	if (k%10>1&&k%10<5) ans = ans+", "+kilo(k)+" "+k2;
+	else
+	ans = ans+", "+kilo(k)+" "+k3;
 	return ans;
 }
