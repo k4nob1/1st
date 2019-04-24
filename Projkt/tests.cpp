@@ -34,6 +34,7 @@ BOOST_AUTO_TEST_CASE( test_int_to_sto )
 	BOOST_TEST( int_to_sto(6) == string("шесть") );
 	BOOST_TEST( int_to_sto(7) == string("семь") );
 	BOOST_TEST( int_to_sto(8) == string("восемь") );
+	BOOST_TEST( int_to_sto(1) == string("один") );
 	BOOST_TEST( int_to_sto(9) == string("девять") );
 	BOOST_TEST( int_to_sto(10) == string("десять") );
 	BOOST_TEST( int_to_sto(20) == string("двадцать") );
