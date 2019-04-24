@@ -231,7 +231,7 @@ string kilo(int n)
 string sch(int n, string s1,string s2,string s3)
 {
 	string ans;
-	if (n/100==11||n/100==12||n/100==13||n/100==14) ans = kilo(n)+" "+s3;
+	if (n%100==11||n%100==12||n%100==13||n%100==14) ans = kilo(n)+" "+s3;
 	else
 	if (n%10==1) ans = kilo(n)+" "+s1;
 	else

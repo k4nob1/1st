@@ -36,8 +36,15 @@ BOOST_AUTO_TEST_CASE( test_int_to_sto )
 	BOOST_TEST( int_to_sto(8) == string("восемь") );
 	BOOST_TEST( int_to_sto(9) == string("дев€ть") );
 	BOOST_TEST( int_to_sto(10) == string("дес€ть") );
-	BOOST_TEST( int_to_sto(22) == string("двадцать два") );
+	BOOST_TEST( int_to_sto(20) == string("двадцать") );
 	BOOST_TEST( int_to_sto(30) == string("тридцать") );
+	BOOST_TEST( int_to_sto(40) == string("сорок") );
+	BOOST_TEST( int_to_sto(50) == string("п€тьдес€т") );
+	BOOST_TEST( int_to_sto(60) == string("шестьдес€т") );
+	BOOST_TEST( int_to_sto(70) == string("семьдес€т") );
+	BOOST_TEST( int_to_sto(80) == string("восемьдес€т") );
+	BOOST_TEST( int_to_sto(90) == string("дев€носто") );
+	BOOST_TEST( int_to_sto(22) == string("двадцать два") );
 	BOOST_TEST( int_to_sto(99) == string("дев€носто дев€ть") );
 	BOOST_TEST( int_to_sto(64) == string("шестьдес€т четыре") );
 	BOOST_TEST( int_to_sto(86) == string("восемьдес€т шесть") );
@@ -47,9 +54,19 @@ BOOST_AUTO_TEST_CASE( test_kilo )
 {
 	BOOST_TEST( kilo(6) == string("шесть") );
 	BOOST_TEST( kilo(7) == string("семь") );
-	BOOST_TEST( kilo(8) == string("восемь") );
-	BOOST_TEST( kilo(9) == string("дев€ть") );
+	BOOST_TEST( kilo(15) == string("п€тьнадцать") );
+	BOOST_TEST( kilo(100) == string("сто") );
+	BOOST_TEST( kilo(101) == string("сто один") );
+	BOOST_TEST( kilo(200) == string("двести") );
+	BOOST_TEST( kilo(300) == string("триста") );
+	BOOST_TEST( kilo(400) == string("четыреста") );
+	BOOST_TEST( kilo(500) == string("п€тьсот") );
+	BOOST_TEST( kilo(600) == string("шестьсот") );
+	BOOST_TEST( kilo(700) == string("семьсот") );
+	BOOST_TEST( kilo(800) == string("восемьсот") );
+	BOOST_TEST( kilo(900) == string("дев€тьсот") );
 	BOOST_TEST( kilo(10) == string("дес€ть") );
+	BOOST_TEST( kilo(11) == string("одинадцать") );
 	BOOST_TEST( kilo(22) == string("двадцать два") );
 	BOOST_TEST( kilo(30) == string("тридцать") );
 	BOOST_TEST( kilo(99) == string("дев€носто дев€ть") );
@@ -61,6 +78,9 @@ BOOST_AUTO_TEST_CASE( test_sch )
 	BOOST_TEST( sch(3,"рубль","рубл€","рублей") == string("три рубл€") );
 	BOOST_TEST( sch(1,"стул","стула","стульев") == string("один стул") );
 	BOOST_TEST( sch(6,"рубль","рубл€","рублей") == string("шесть рублей") );
+	BOOST_TEST( sch(11,"рубль","рубл€","рублей") == string("одинадцать рублей") );
+	BOOST_TEST( sch(13,"рубль","рубл€","рублей") == string("тринадцать рублей") );
+	BOOST_TEST( sch(17,"рубль","рубл€","рублей") == string("семьнадцать рублей") );
 	BOOST_TEST( sch(101,"доллар","доллара","долларов") == string("сто один доллар") );
 	BOOST_TEST( sch(103,"гриб","гриба","грибов") == string("сто три гриба") );
 	BOOST_TEST( sch(999,"город","города","городов") == string("дев€тьсот дев€носто дев€ть городов") );
